@@ -15,7 +15,7 @@
             <h:outputLabel for="userInput"
                            value="Your Name"/>
             <h:inputText id="userInput"
-                         value="#{helloBean}"/>
+                         value="#{helloBean.userInput}"/>
             <h:commandButton value="Submit"
                              action="#{helloBean.onSubmit()}"/>
             <h:outputText value="#{helloBean.message}" />
