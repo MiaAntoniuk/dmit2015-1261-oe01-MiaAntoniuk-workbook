@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:p="primefaces">
+
+<h:head>
+    <title>DMIT2015 - Jakarta Faces</title>
+</h:head>
+
+<h:body>
+
+    <h1>Welcome to DMIT2015</h1>
+
+    <h:form>
+
+        <h:outputLabel for="firstName" value="First Name:" />
+        <h:inputText id="firstName" value="#{greetingBean.firstName}" />
+
+        <br/><br/>
+
+        <p:commandButton value="Submit" update="message" />
+
+        <br/><br/>
+
+        <h:outputText id="message"
+                      value="#{greetingBean.greetingMessage}" />
+
+    </h:form>
+
+</h:body>
+</html>
